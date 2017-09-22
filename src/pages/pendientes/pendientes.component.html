@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Lista de pendientes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Lista de pendientes</h2>
+<!--  <ul>
+    <li *ngFor="let item of _listaService.lista">
+      {{item.nombre_lista}}
+    </li>
+  </ul> -->
+
+  <ion-card *ngFor="let item of _listaService.lista">
+    <ion-item></ion-item>
+    <h2>  {{item.nombre_lista}}</h2>
+  </ion-card>
+</ion-content>
