@@ -12,13 +12,17 @@ import {ListaService} from '../app/services/lista.services';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {AgregarComponent} from "../pages/agregar/agregar.component";
+import {placeholderPipe} from "./pipes/placeholder.pipe";
 
 @NgModule({
   declarations: [
     MyApp,
     TabsPage,
+    placeholderPipe,
     PendientesComponent,
-    TerminadosComponent
+    TerminadosComponent,
+    AgregarComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     TabsPage,
     PendientesComponent,
-    TerminadosComponent
+    TerminadosComponent,
+    AgregarComponent
   ],
   providers: [
     StatusBar,
